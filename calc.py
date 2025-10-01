@@ -7,17 +7,14 @@ def do(a,b,o):
         return a*b
     if o=="div":
         if b==0:
-            print("errrrrrrrrr") 
+            print("error - cannot divide by 0") 
             return 0
         return a/b
-    if o=="plus":
-        return a+b
     else:
-        print("wut?") 
+        print("error - input not acceptable") 
         return
 print("CALCULATOR") 
-print("Do math ok!!") 
-x=input("1st number")
-y=input("2nd number")
-z=input("do wut")
-print("Answer is:",  do(int(x),int(y),z))
+x=input("Value 1: ")
+y=input("Value 2: ")
+z=input("Operation (+,-,x,/): ")
+print("Result: ",do(int(x),int(y),z))
